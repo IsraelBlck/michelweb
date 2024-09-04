@@ -1,0 +1,118 @@
+/* Reset margin and padding for consistent layout */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full height of the viewport */
+html {
+    height: 100%;
+}
+
+/* Body styling */
+body {
+    font-family: sans-serif; /* Sets a default font */
+    line-height: 1.6; /* Improves readability */
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark text color */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+header {
+    background-color: #fff;
+    height: 100px; /* Set header height */
+    display: flex;
+    align-items: center; /* Center nav items vertically */
+    justify-content: center; /* Center nav items horizontally */
+}
+
+/* Basic styles for the navbar */
+nav {
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centers the links horizontally */
+    align-items: center; /* Aligns the links vertically */
+    text-transform: uppercase;
+    letter-spacing: 0.214em;
+}
+
+nav ul li {
+    position: relative; /* Ensures dropdown is positioned relative to this li */
+}
+
+nav ul li a {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #333;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #437699;
+}
+
+/* Fancy animated dropdown styles */
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    z-index: 1;
+    left: 5%; /* Centers the dropdown relative to the parent li */
+    transform: translateX(-50%);
+    opacity: 0; /* Hide initially */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(-10px); /* Initial position for animation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow */
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+    opacity: 1; /* Make visible */
+    transform: translateY(0); /* Slide down */
+}
+
+nav ul li .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: 333;
+}
+
+nav ul li .dropdown-content a:hover {
+    color: #437699;
+}
+
+/* Main content styling */
+main {
+    flex: 1; /* Allows the main content to grow and fill available space */
+    padding: 20px;
+}
+
+section {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
