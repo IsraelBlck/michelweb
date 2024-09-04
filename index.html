@@ -3,27 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>pmthinks</title>
+  <title>Your Website Title</title>
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Studies</a></li>
-            <li>
-                <a href="#">More</a>
-                <div class="dropdown-content">
-                    <a href="#">PM Magazine</a>
-                    <a href="#">Grants</a>
-                    <a href="#">Ethics</a>
-                </div>
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Team</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Studies</a>
+            </li>
+            <!-- More dropdown -->
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link">More</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="#">PM Magazine</a></li>
+                    <li class="dropdown-item"><a href="#">Grants</a></li>
+                    <li class="dropdown-item"><a href="#">Ethics</a></li>
+                </ul>
             </li>
         </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
   </header>
 
@@ -34,10 +50,10 @@
     </section>
   </main>
 
-  <footer>
+  <footer>  
     <p>&copy; 2023 Your Website Name. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
