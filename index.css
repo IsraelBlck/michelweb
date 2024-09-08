@@ -833,6 +833,91 @@ footer {
   border-radius: 0px;
   object-fit: cover;
 }
+/*PM magazine page*/
+.pm-magazine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.pm-magazine .content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.pm-magazine h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.pm-magazine p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.past-issues {
+  padding: 50px 0;
+}
+
+.past-issues h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: rgb(74, 123, 158);
+  letter-spacing: 0.125em;
+  line-height: 1.4;
+}
+.past-issues p {
+  color: rgb(89, 89, 89);
+  padding: 20px 0;
+}
+
+.issues-container {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.issue-box {
+  width: 360px;
+  text-align: center;
+  background-color: rgb(238, 244, 251);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.issue-image {
+  width: 100%;
+  height: 333px;
+  object-fit: cover;
+}
+
+.issue-details {
+  padding: 10px;
+}
+
+.issue-date {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.issue-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+
 /* Responsive Mode */
 @media (max-width: 768px) {
   /* Hide "More"  link and directly show its dropdown items */
@@ -1012,6 +1097,16 @@ footer {
   .wider img {
       max-width: 100%; /* Allow the image to scale down further on smaller screens */
       height: auto;
+  }
+  .issues-container {
+    justify-content: center;
+    padding: 30px;
+  }
+  .past-issues h2 {
+    padding-left: 20px;
+  }
+  .past-issues p {
+    padding-left: 20px;
   }
 }
 /* For screens 1024px and below */
