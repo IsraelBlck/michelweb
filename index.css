@@ -800,8 +800,8 @@ footer {
 }
 /* studies page */
 .studies-section {
-  padding: 50px 20px;
-  background-color: #f9f9f9;
+  padding: 50px 50px;
+  align-self: flex-start;
 }
 
 .studies-content {
@@ -815,6 +815,9 @@ footer {
   margin-bottom: 20px;
   text-align: left;
   color: #333;
+  line-height: 1.25;
+  letter-spacing: 0.031em;
+  font-weight: 400;
 }
 
 .studies-content p {
@@ -823,6 +826,12 @@ footer {
   line-height: 1.6;
   text-align: left;
   color: #555;
+}
+.wider img{
+  width: 400px;
+  height: 200px;
+  border-radius: 0px;
+  object-fit: cover;
 }
 /* Responsive Mode */
 @media (max-width: 768px) {
@@ -999,6 +1008,10 @@ footer {
   
   .studies-content p {
     font-size: 1rem;
+  }
+  .wider img {
+      max-width: 100%; /* Allow the image to scale down further on smaller screens */
+      height: auto;
   }
 }
 /* For screens 1024px and below */
