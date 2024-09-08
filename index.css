@@ -749,7 +749,40 @@ footer {
   margin-bottom: 20px;
   font-weight: 400;
 }
+.products-section {
+  text-align: center;
+  padding: 40px 0;
+}
 
+.products-title {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-name {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
 
 
 /* Responsive Mode */
