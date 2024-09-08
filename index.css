@@ -798,8 +798,32 @@ footer {
   color: rgb(27,27,27);
   letter-spacing: 0.045em;
 }
+/* studies page */
+.studies-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
 
+.studies-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
+.studies-content h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #333;
+}
+
+.studies-content p {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: left;
+  color: #555;
+}
 /* Responsive Mode */
 @media (max-width: 768px) {
   /* Hide "More"  link and directly show its dropdown items */
@@ -968,6 +992,13 @@ footer {
   }
   .product-item {
     flex: 1 1 45%; /* Adjusts the width for tablet screens */
+  }
+  .studies-content h1 {
+    font-size: 2rem;
+  }
+  
+  .studies-content p {
+    font-size: 1rem;
   }
 }
 /* For screens 1024px and below */
