@@ -503,9 +503,170 @@ footer {
   letter-spacing: 0.083em;
   color: rgb(89, 89, 89);
 }
+
+
+/*ABOUT PAGE */
+.about-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  width: 1200px; /* Adjust size of the circle */
+  height: 1200px; /* Adjust size of the circle */
+  border-radius: 50%; /* Makes the container circular */
+  overflow: hidden; /* Ensures the image doesn't overflow the circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+}
+
+/*Tech expert section*/
+
+.tech-experts {
+
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px; /* Add some padding */
+}
+
+/* Content wrapper for alignment */
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Limit the width */
+  width: 100%;
+  gap: 40px;
+}
+
+/* Left content takes 65% of space */
+.left-content {
+  flex: 0 0 65%; /* Adjusts the width to 65% */
+  padding: 20px;
+}
+
+.left-content h2 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: rgb(74, 123, 158);
+  font-family: 'open sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.left-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgb(94, 94, 94);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Right content takes 35% of space */
+.right-content {
+  flex: 0 0 35%; /* Adjusts the width to 35% */
+  background-color: #EEF4FB;
+  padding: 32px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.right-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color:#5E5E5E;
+}
+
+/* General section styling */
+.about-us {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box; 
+  height: auto;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  height: auto; 
+  max-width: 1200px; 
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-text {
+  flex: 1;
+  padding: 40px 40px;
+  background-color: rgb(238, 244, 251);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+  height: 100%;
+  min-height: 673px;
+}
+
+.about-text h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: rgb(74, 123, 158);
+  letter-spacing: 0.125em;
+  line-height: 1.4;
+}
+
+.about-text h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #2d2d2d;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+
+.about-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image img {
+  width: 100%;
+  min-height: 673px;
+  object-fit: cover; 
+  object-position: center; 
+  margin: 0;
+  padding: 0;
+}
+
 /* Responsive Mode */
 @media (max-width: 768px) {
-  /* Hide "More" link and directly show its dropdown items */
+  /* Hide "More"  link and directly show its dropdown items */
   .nav-item.dropdown > .nav-link {
     display: none;
   }
@@ -637,4 +798,53 @@ footer {
     flex-direction: column;
     gap: 20px; /* Less space between links on smaller screens */
   }
+  .content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .right-content {
+    margin-top: 20px;
+  }
+
+  .left-content, .right-content {
+    flex: 1 1 auto; /* Make both sides full-width on smaller screens */
+  }
+  .content-container {
+    flex-direction: column-reverse; /* Image comes first */
+    text-align: center;
+  }
+
+  .about-text, .about-image {
+    width: 100%;
+  }
+
+  .about-image img {
+    height: auto;
+    max-height: 400px; /* Ensure image is not too tall in mobile */
+  }
+}
+/* For screens 1024px and below */
+@media (max-width: 1024px) {
+  .image-container {
+    width: 800px;
+    height: 800px;
+  }
+}
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+  .image-container {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+/* For screens 480px and below */
+@media (max-width: 480px) {
+  .image-container {
+    width: 300px;
+    height: 300px;
+  }
+  
 }
