@@ -916,7 +916,54 @@ footer {
   font-weight: bold;
   color: #333;
 }
+.grants-section {
+  padding: 50px 0;
+}
 
+.grants-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.grants-image img {
+  width: 592px;
+  height: 394px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.grants-content {
+  max-width: 500px;
+}
+
+.grants-content h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: left;
+  color: #333;
+  line-height: 1.25;
+  letter-spacing: 0.031em;
+  font-weight: 400;
+}
+
+.grants-content p {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: left;
+  color: #555;
+}
+
+.grants-content a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.grants-content a:hover {
+  text-decoration: underline;
+}
 
 /* Responsive Mode */
 @media (max-width: 768px) {
