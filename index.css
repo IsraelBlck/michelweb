@@ -969,10 +969,12 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 40px 0;
+  width: 100%; /* Full width of the page */
+  max-width: 1400px; /* Adjust this value to match or exceed the Tech Expert section width */
+  margin: 0 auto; /* Center the section */
 }
 
 .ethics-image-container {
-  max-width: 1232px;
   width: 100%;
 }
 
@@ -1173,8 +1175,9 @@ footer {
   .past-issues p {
     padding-left: 20px;
   }
-  .ethics-image-container {
+   .ethics-image-container {
     max-width: 100%;
+    padding: 0 20px;
   }
 }
 /* For screens 1024px and below */
