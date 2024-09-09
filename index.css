@@ -13,7 +13,7 @@ body {
 header {
   background-color: white;
 }
-li {
+.nav-menu li {
   list-style: none;
   text-transform: uppercase;
   font-size: 16px;
@@ -1050,6 +1050,68 @@ footer {
   letter-spacing: 0.125em;
   text-transform: uppercase;
 }
+.als-section {
+  background-color: rgb(238, 244, 251);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.als-section .alscontent-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.als-section h2 {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: rgb(27, 27, 27);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 0.045em;
+}
+
+.als-section h3 {
+  font-size: 1.2rem;
+  color: rgb(27, 27, 27);
+  margin-top: 20px;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.als-section p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(94, 94, 94);
+  margin-bottom: 20px;
+}
+
+.als-section ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.als-section ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(94, 94, 94);
+  margin-bottom: 20px;
+  padding: 5px 0;
+}
+
+.als-section ul ul {
+  margin-top: 10px;
+}
+
+.als-section ul ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
 
 
 /* Responsive Mode */
@@ -1253,6 +1315,9 @@ footer {
   .pdf-image img {
     width: 100%;
     height: auto;
+  }
+  .als-section {
+    margin: 0 30px;
   }
 }
 /* For screens 1024px and below */
