@@ -1021,6 +1021,36 @@ footer {
 .left-content h2 {
   letter-spacing: 0.081em;
 }
+.symposium-section {
+  padding: 40px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.symposium-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.pdf-download {
+  padding: 40px 0;
+}
+.pdf-image img {
+  max-width: 592px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.content-wrapper1 h2 {
+  font-size: 18px;
+  color: rgb(74, 123, 158);
+  line-height: 1.5;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+}
+
 
 /* Responsive Mode */
 @media (max-width: 768px) {
@@ -1215,6 +1245,14 @@ footer {
    .ethics-image-container {
     max-width: 100%;
     padding: 0 20px;
+  }
+  .symposium-section {
+    padding: 20px;
+  }
+
+  .pdf-image img {
+    width: 100%;
+    height: auto;
   }
 }
 /* For screens 1024px and below */
