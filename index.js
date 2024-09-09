@@ -49,4 +49,4 @@ document.getElementById('dropLineButton').addEventListener('click', function() {
     // Show the form section
     document.getElementById('form-section').style.display = 'block';
   });
-  
+

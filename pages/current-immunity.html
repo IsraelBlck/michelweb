@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.6.82/pdf.min.mjs"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="team.html" class="nav-link">Team</a>
+            </li>
+            <li class="nav-item">
+              <a href="products.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="studies.html" class="nav-link">Studies</a>
+            </li>
+            <!-- More dropdown -->
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link">More</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item"><a href="pmmagazine.html">PM Magazine</a></li>
+                <li class="dropdown-item"><a href="grants.html">Grants</a></li>
+                <li class="dropdown-item"><a href="ethics.html">Ethics</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+
+    
+      <main>
+        <div class="pdf-viewer-wrapper">
+           
+                <h1 class="pdf-title">Current Immunity</h1>
+
+            <div class="pdf-viewer-container">
+                
+                <iframe id="pdfIframe" src="../assets/Magazine layout_adera_septmber_2023_c.pdf" width="100%" height="800px" style="border: none;"></iframe>
+            </div>
+            <a href="../assets/Magazine layout_adera_septmber_2023_c.pdf" download class=" cta-button">Download PDF</a>
+        </div>
+        <div class="pdf-viewer-wrapper">
+         
+            <div class="pdf-viewer-container">
+                <h1 class="pdf-title">Current Immunity</h1>
+                <iframe id="pdfIframe" src="../assets/Immunity Boosters Around the Word_second_mag_a.pdf" width="100%" height="800px" style="border: none;"></iframe>
+            </div>
+            <a href="../assets/Immunity Boosters Around the Word_second_mag_a.pdf" download class=" cta-button">Download PDF</a>
+        </div>
+    </main>
+      <footer>
+        <nav class="footer-nav">
+          <ul class="footer-links">
+            <li><a href="products.html">Products</a></li>
+            <li><a href="studies.html">Studies</a></li>
+            <li><a href="upcoming-events.html">Upcoming Events</a></li>
+          </ul>
+        </nav>
+        <div class="footer-info">
+          <p class="deep">Deep Linguistic Solutions</p>
+          <p class="light">Copyright © 2024 PM Ltd - All Rights Reserved.</p>
+        </div>
+      </footer>
+   <script src="../index.js"></script>
+</body>
+</html>
