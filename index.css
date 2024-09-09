@@ -984,6 +984,43 @@ footer {
   display: block;
   object-fit: cover;
 }
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.event-item {
+  background-color: #f7f7f7;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-item a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2a76c6; /* Example link color */
+  transition: color 0.3s ease;
+}
+
+.event-item a:hover {
+  color: #1a4a7a; /* Darker shade on hover */
+}
+
+.event-item p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.event-item p::before {
+  content: "• ";
+  color: #2a76c6; /* Bullet color */
+  font-weight: bold;
+}
+.left-content h2 {
+  letter-spacing: 0.081em;
+}
 
 /* Responsive Mode */
 @media (max-width: 768px) {
