@@ -1112,7 +1112,62 @@ footer {
   list-style-type: disc;
   margin-left: 20px;
 }
+/*depression page*/
+.depression-section {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
 
+.content-wrapper {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.text-content {
+  padding: 20px;
+}
+.text-content h1 {
+  padding: 20px 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 0.045em;
+  line-height: 1.25;
+  color: rgb(27, 27, 27);
+}
+.text-content h2 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: rgb(74, 123, 158);
+  font-family: 'open sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.text-content p {
+  font-size: 16px;
+  color: rgb(94, 94, 94);
+  line-height: 1.5;
+  font-weight: 400;
+}
+.text-content h4 {
+  font-size: 16px;
+  color: rgb(94, 94, 94);
+  line-height: 1.5;
+  font-weight: 700;
+}
+.float-image {
+  float: left;
+  margin: 0 20px 10px 0;
+  width: 40%;
+  max-width: 300px; /* Adjust as necessary */
+  border-radius: 8px;
+}
+.rightfloat {
+  float: right;
+}
+.alink {
+  color: #578db3;
+}
 
 /* Responsive Mode */
 @media (max-width: 768px) {
@@ -1318,6 +1373,12 @@ footer {
   }
   .als-section {
     margin: 0 30px;
+  }
+  .float-image {
+    float: none;
+    display: block;
+    margin: 10px auto;
+    width: 100%; /* Ensure responsiveness */
   }
 }
 /* For screens 1024px and below */
