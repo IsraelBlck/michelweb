@@ -964,6 +964,24 @@ footer {
 .grants-content a:hover {
   text-decoration: underline;
 }
+.ethics-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.ethics-image-container {
+  max-width: 1232px;
+  width: 100%;
+}
+
+.ethics-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
 
 /* Responsive Mode */
 @media (max-width: 768px) {
@@ -1154,6 +1172,9 @@ footer {
   }
   .past-issues p {
     padding-left: 20px;
+  }
+  .ethics-image-container {
+    max-width: 100%;
   }
 }
 /* For screens 1024px and below */
