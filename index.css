@@ -1259,6 +1259,89 @@ footer {
     height: 800px;
     border: none;
 }
+
+.meeting-section {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.meeting-title {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: rgb(74, 123, 158);
+  line-height: 1.5;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.meeting-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.meeting-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.meeting-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.ethics-section {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 30px;
+  background: #f1f1f1;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.ethics-title {
+  font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    text-align: center;
+    color: rgb(74, 123, 158);
+    letter-spacing: 0.125em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.ethics-description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #5E5E5E;
+
+}
+
+.email-link {
+  color: #578db3;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.email-link:hover {
+  color: #0056b3;
+}
 /* Responsive Mode */
 @media (max-width: 768px) {
   .text-content p {
